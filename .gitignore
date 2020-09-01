@@ -3,6 +3,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Large files
+data/COMPLETE_df.pkl
+data/ACS_ALL_2018.pkl
+data/acs_2018.pkl
+data/prepped/complete_df.pkl
+
 # C extensions
 *.so
 
