@@ -94,9 +94,9 @@ The understanding, therefore, is more of a "socio-politial" understanding than a
 5. Political Representatives
 
 <p>
-<img src="figures/census_broadband_pct.jpg" alt="Percent with Broadband Access" align="left" hspace="10px"  width="400px" height="400px">
+<img src="figures/census_broadband_pct.jpg" alt="Percent with Broadband Access" align="left" hspace="10px"  width="300px" height="300px">
 
-<img src="figures/census_device_access.jpg" alt="Percent with Device Access" hspace="10px" align="" width="400px" height="400px">
+<img src="figures/census_device_access.jpg" alt="Percent with Device Access" hspace="10px" align="" width="300px" height="300px">
 </p>
 
 **GOAL: Obtain the importance of the digital divide (broadband and device access) in accurately predicting students' educational assessment scores.**
@@ -247,9 +247,9 @@ Further detail is provided in the [Modeling Notebook](notebooks/4_Modeling_two_v
    - However, model performance peaked, and linear regression could not handle the correlation of feature, rendering some irrelevant, or even worsening the model:
 
 <p> 
-<img src="figures/model_eval/en_reg_res_plot.png" alt="Linear Regression with ElasticNet Cross-validation Residuals plot" align="left" hspace="10px" width="400px" height="300px">
+<img src="figures/model_eval/en_reg_res_plot.png" alt="Linear Regression with ElasticNet Cross-validation Residuals plot" align="left" hspace="10px" width="300px" height="225px">
 
-<img src="figures/features/elasticnet_cv_feature_importances.png" alt="Feature Importances for Elastic Net"  align="" width="470px" height="350px">
+<img src="figures/features/elasticnet_cv_feature_importances.png" alt="Feature Importances for Elastic Net"  align="" width="300px" height="210px">
 </p>
 
 
