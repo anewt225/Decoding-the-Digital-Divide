@@ -7,7 +7,7 @@ This project analyzes the impact of the broadband and device digital divide upon
 
 ## Repository Navigation
 
-<img src="figures/neutrality-digital-divide.png" alt="Digital Divide - symmetrical images of girl with and without digital access" style="float:right;width:400px;height:270px;">
+<img src="figures/neutrality-digital-divide.png" alt="Digital Divide - symmetrical images of girl with and without digital access" align="right" width="350px" height="180px">
 
 
 - [DATA:](data)
@@ -26,15 +26,13 @@ This project analyzes the impact of the broadband and device digital divide upon
 
 
 - [NOTEBOOKS:](notebooks)
-<img src="figures/presentation/studying_from_home.png" alt="Remote Education - graphic of 2 students stuying from home" style="float:right;width:350px;height:350px;">
-
-    - Notebooks used for analyzing data
-    - [Executive Notebook](notebooks/1_Executive_Notebook.ipynb)
-    - [Education EDA](notebooks/2_Education_EDA.ipynb)
-    - [Geodata EDA](notebooks/2a_geodata_EDA.ipynb)
-    - [Census and Education EDA](notebooks/3_Census_and_Education_EDA.ipynb)
-    - [MODELS](notebooks/4_Modeling_two_variables.ipynb)
-    - [Feature Importances](notebooks/5_feature_importances.ipynb)
+	- Notebooks used for analyzing data
+   - [Executive Notebook](notebooks/1_Executive_Notebook.ipynb)
+   - [Education EDA](notebooks/2_Education_EDA.ipynb)
+   - [Geodata EDA](notebooks/2a_geodata_EDA.ipynb)
+   - [Census and Education EDA](notebooks/3_Census_and_Education_EDA.ipynb)
+   - [MODELS](notebooks/4_Modeling_two_variables.ipynb)
+   - [Feature Importances](notebooks/5_feature_importances.ipynb)
     
 
 
@@ -59,6 +57,8 @@ This project analyzes the impact of the broadband and device digital divide upon
 ***
 
 ## Readme Navigation
+
+<img src="figures/presentation/studying_from_home.png" alt="Remote Education - graphic of 2 students stuying from home" align="right" width="350px" height="350px">
 
 1. [Business Understanding](#Business-Understanding)
 
@@ -93,11 +93,11 @@ The understanding, therefore, is more of a "socio-politial" understanding than a
 4. Working-From-Home Parents
 5. Political Representatives
 
+<p>
+<img src="figures/census_broadband_pct.jpg" alt="Percent with Broadband Access" align="left" hspace="10px"  width="400px" height="400px">
 
-<img src="figures/census_broadband_pct.jpg" alt="Percent with Broadband Access" style="float:left;width:400px;height:400px;">
-
-<img src="figures/census_device_access.jpg" alt="Percent with Device Access" style="float:;padding:5px;width:400px;height:400px;">
-
+<img src="figures/census_device_access.jpg" alt="Percent with Device Access" hspace="10px" align="" width="400px" height="400px">
+</p>
 
 **GOAL: Obtain the importance of the digital divide (broadband and device access) in accurately predicting students' educational assessment scores.**
 
@@ -123,7 +123,7 @@ Instructions for acquiring this specific data from the Census and the NCES are p
 
 The selected data collected from the above 3 sources (ACS, SAIPE, Ed*Facts* were merged to produce one dataset. This complete dataset includes 13,000 public School Districts as observations, features selected for their presumed impact in determining the educational assessment performance, and the   observations include over 13,000 School Districts in the United States. Features were manually selected based on industry knowledge to be used for explainability.,
 
-<img src="figures/taco_bell_students.jpg" alt="Two Students Use Internet at Taco Bell with assistance from employees" style="float:right;width:300px;height:320px;">
+<img src="figures/taco_bell_students.jpg" alt="Two Students Use Internet at Taco Bell with assistance from employees" align="right" width="300px" height="320px">
 
 1. **OBSERVATIONS** - 13,000 School Districts
     1. Unified, Elementary, Secondary School Districts
@@ -174,13 +174,15 @@ The initial EDA process was used to determine how to prepare the data for optima
 The [Education EDA Notebook](notebooks/2_Education_EDA.ipynb) goes into further detail regarding the formatting due to privacy issues. Certain range values were dropped due to their lack of specificity (e.g., Greater than or equal to 50% proficient is not very informative). The increased lack of specificity corresponded with decreased School District sizes, so dropping these features was reasonable. Other values (e.g., GE95, etc.) were engineered as averages. More detail on the methodology can be found in Section 1.5 of the [Ed*Facts* Documentation](src/documentation/assessments-sy2017-18-public-file-documentation.docx) as well.
 
 ### Distributions:
-<img src="figures/distributions.png" alt="Feature distributions with skewness and kurtosis" style="float:left;width:312px;height:400px;">
-<img src="figures/new_distributions.png" alt="Feature distributions with skewness and kurtosis" style="float:;width:312px;height:400px;">
-
+<p>
+<img src="figures/distributions.png" alt="Feature distributions with skewness and kurtosis" hspace="30px"  align="left" width="312px" height="400px">
+<img src="figures/new_distributions.png" alt="Feature distributions with skewness and kurtosis"  align="" width="312px" height="400px">
+</p>
+	
 As can be seen in the visualization on the left, these initial distributions had different scales and various skews, so a Box-Cox transformation was applied to smoothen out the data and aid the models in making more effective predictions, as seen on the right. The two digital access features we are most interested in, device access and broadband access, are highlighted in red. 
 
 ### Feature Correlations:
-<img src="figures/feature_correlations.png" alt="Feature Correlations" style="width:400px;height:309px;">
+<img src="figures/feature_correlations.png" alt="Feature Correlations" width="400px" height="309px">
 The graphic above displays correlations between all the variables, including the target variables, where:
 - Dark Green = 100% positive correlation
 - Yellow = 0 correlation
@@ -190,13 +192,13 @@ Ideally, each variable would be in the light orange to light green range, with m
 
 
 ### Target Variable Correlation:
-<img src="figures/comp_prof_dist.png" alt="Composite proficiency distributions chart is shaded and overlays two separate math and reading / language arts distributions" style="width:400px;height:309px;">
+<img src="figures/comp_prof_dist.png" alt="Composite proficiency distributions chart is shaded and overlays two separate math and reading / language arts distributions"  width="400px" height="309px">
 
 One adjustment that was made from the correlations was the engineering of a "composite" proficiency percentage, which was the average of the math and reading scores. Since the distributions were not exactly the same (with math skewing right - generally lower percentages of students proficient), these target variables could be separated and analyzed in the future for the digital divide impact on them each.
 
 
 ### Missing Data:
-<img src="figures/math_assessments_1a.png" alt="Map of US Math Assessment scores with missing data" style="width:600px;height:399px;">
+<img src="figures/math_assessments_1a.png" alt="Map of US Math Assessment scores with missing data" width="600px" height="399px">
 
 Initially, this study focused on only Secondary School Districts; however, the above EDA geographic heat map of math proficiency perecentages revealed that secondary schools were also under the Unified School Districts category as well. So additional data for all 3 district types (Elementary, Unified, Secondary) was acquired to account for this gap. In the future, the data could be bucketed by selecting column ranges for the specific grades desired.
 
@@ -244,9 +246,11 @@ Further detail is provided in the [Modeling Notebook](notebooks/4_Modeling_two_v
    - Increased Adjusted R^2 to .3478, decreased RMSE to 13.54
    - However, model performance peaked, and linear regression could not handle the correlation of feature, rendering some irrelevant, or even worsening the model:
 
-<img src="figures/model_eval/en_reg_res_plot.png" alt="Linear Regression with ElasticNet Cross-validation Residuals plot" style="float:left;width:400px;height:px;">
+<p> 
+<img src="figures/model_eval/en_reg_res_plot.png" alt="Linear Regression with ElasticNet Cross-validation Residuals plot" align="left" hspace="10px" width="400px" height="300px">
 
-<img src="figures/features/elasticnet_cv_feature_importances.png" alt="Feature Importances for Elastic Net" style="float:;padding:5px;width:400px;height:300px;">
+<img src="figures/features/elasticnet_cv_feature_importances.png" alt="Feature Importances for Elastic Net"  align="" width="470px" height="350px">
+</p>
 
 
 
@@ -280,9 +284,12 @@ The Random Forest Regressor increases performance by using a forest of trees, in
 The last two models tried were a Gradient Boosting Tree and Xtra Gradient Boosting. The Gradient Boosted Tree increases performance by creating a forest of trees by analyzing the errors on previous trees. XGBoost, even with Grid Search Cross-Validation on the hyperparameters, performed worse than the standard gradient boosted tree with the metrics we used, so we won't go into detail on it here. Below we visualize the error rate on the Gradient Boosted Tree regressor.
 
 
-<img src="figures/model_eval/gb_errors.png" alt="Gradient Boosting Tree Regressor Errors" style="float:right;width:400px;height:375px;">
+<img src="figures/model_eval/gb_errors.png" alt="Gradient Boosting Tree Regressor Errors" width="375px" height="300px">
 
-## Model Selection
+
+
+
+## Model Selection 
 
 After progressing through more and more complex models, several were developed, and to ensure the best performance, used Cross-Validation on each, with both R-squared and RMSE as the evaluation metrics. After this evaluation, **Gradient Boosting Regressor** (with hyperparameters selected through cross-validation) was selected for the following reasons:
 
@@ -325,16 +332,16 @@ While the project analyzes the feature importance through all three, the most re
 
 Thus, rather than using a simplistic **bar chart** to demonstrate feature importances...
 
-<img src="figures/new_shap_summary_plot.png" alt="Gradient Boosting Tree Feature Importances" style="width:600px;height:400px;">
+<img src="figures/new_shap_summary_plot.png" alt="Gradient Boosting Tree Feature Importances"  width="600px" height="400px">
 
 
 ...we can get a **BeeSwarm plot** where each individual dot is an observation, and that shows in what direction and to what extent each feature contributes in forming the prediction... 
 
-<img src="figures/features/shap_swarm.png" alt="SHAP Beeswarm Plot" style="width:600px;height:346px;">
+<img src="figures/features/shap_swarm.png" alt="SHAP Beeswarm Plot"  width="600px" height="346px">
 
 ...as well as view how these features impact a particular district:
 
-<img src="figures/features/force_plot_1980.png" alt="SHAP Force Plot" style="width:600px;height:132px;">
+<img src="figures/features/force_plot_1980.png" alt="SHAP Force Plot"  width="600px" height="132px">
 
 Thes charts allowed us to make the following conclusions:
 1. Higher poverty ratios decrease performance, 
@@ -385,20 +392,23 @@ The impact of broadband access is pretty significant given the importance of oth
 
 
 
-# Project Info <img src="figures/corona_education.jpeg" alt="Coronavirus Distance Education, Washington Post" style="float:right;padding:10px;width:400px;height:300px;">
+# Project Info
+<p>
+<img src="figures/corona_education.jpeg" alt="Coronavirus Distance Education, Washington Post"   align="right" hspace="10px" width="400px" height="300px">
+</p>
 
 **Contributor**: __[Alexander Newton](mailto:alexandernewton@gmail.com)__
 
 <a href="https://www.linkedin.com/in/anewt/">
-         <img alt="Alexander Newton LinkedIn Profile" src="figures/presentation/linkedin.png" style="float:left;padding:10px;width:30px;height:30px;">
+         <img alt="Alexander Newton LinkedIn Profile" src="figures/presentation/linkedin.png"   align="left" hspace="10px" width="30px" height="30px">
       </a>
 
 <a href="https://medium.com/@a_newt">
-         <img alt="Alexander Newton Medium Profile" src="figures/presentation/medium.png" style="float:left;padding:10px;width:30px;height:30px;">
+         <img alt="Alexander Newton Medium Profile" src="figures/presentation/medium.png"   align="left" hspace=10px width="30px" height="30px">
       </a>
 
 <a href="https://youtu.be/VOxTYL4VKHU">
-         <img alt="Alexander Newton Medium Profile" src="figures/presentation/youtube.png" style="float:;padding:10px;width:30px;height:30px;">
+         <img alt="Alexander Newton Medium Profile" src="figures/presentation/youtube.png"   align="" hspace=10px width="30px" height="30px">
       </a>
 
 **Languages**  : Python
