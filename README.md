@@ -175,8 +175,8 @@ The [Education EDA Notebook](notebooks/2_Education_EDA.ipynb) goes into further 
 
 ### Distributions:
 <p>
-<img src="figures/distributions.png" alt="Feature distributions with skewness and kurtosis" hspace="30px"  align="left" width="312px" height="400px">
-<img src="figures/new_distributions.png" alt="Feature distributions with skewness and kurtosis"  align="" width="312px" height="400px">
+<img src="figures/distributions.png" alt="Feature distributions with skewness and kurtosis" hspace="15px"  align="left" width="300px" height="385px">
+<img src="figures/new_distributions.png" alt="Feature distributions with skewness and kurtosis"  align="" width="300px" height="385px">
 </p>
 	
 As can be seen in the visualization on the left, these initial distributions had different scales and various skews, so a Box-Cox transformation was applied to smoothen out the data and aid the models in making more effective predictions, as seen on the right. The two digital access features we are most interested in, device access and broadband access, are highlighted in red. 
