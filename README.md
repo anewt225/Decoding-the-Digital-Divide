@@ -407,11 +407,11 @@ The impact of broadband access is pretty significant given the importance of oth
          <img alt="Alexander Newton Medium Profile" src="figures/presentation/medium.png"   align="left" hspace=10px width="30px" height="30px">
       </a>
 
-<a href="https://youtu.be/VOxTYL4VKHU">
+<a href="https://youtu.be/MX_vj9a5waQ">
          <img alt="Alexander Newton Medium Profile" src="figures/presentation/youtube.png"   align="" hspace=10px width="30px" height="30px">
       </a>
 
-**Languages**  : Python
+**Languages**  : Python, HTML
 
 **Tools/IDE**  : Git, Command Line (Windows), Anaconda, Jupyter Notebook / Jupyter Lab, Google Slides, Trello, Toggl Track
 
