@@ -421,7 +421,7 @@ The impact of broadband access is pretty significant given the importance of oth
 
 **Last Update**: 09.30.2020
 
-[Presented on 09.29.2020](https://youtu.be/VOxTYL4VKHU)
+[Presented on 09.29.2020](https://youtu.be/MX_vj9a5waQ)
 
 ```python
 
