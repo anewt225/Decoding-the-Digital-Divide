@@ -385,7 +385,7 @@ The impact of broadband access is pretty significant given the importance of oth
 
 
 3. **Model**
-    - Upddate with 2020 Census information
+    - Update with 2020 Census information
     - Get more relevant / recent school assessment data - 2 years (2018) is forever ago in technology
     - Use Time-Series Analysis to address trends in time and evaluate remedy effectiveness.
 
@@ -403,7 +403,7 @@ The impact of broadband access is pretty significant given the importance of oth
          <img alt="Alexander Newton LinkedIn Profile" src="figures/presentation/linkedin.png"   align="left" hspace="10px" width="30px" height="30px">
       </a>
 
-<a href="https://medium.com/@a_newt">
+<a href="https://anewt.medium.com/">
          <img alt="Alexander Newton Medium Profile" src="figures/presentation/medium.png"   align="left" hspace=10px width="30px" height="30px">
       </a>
 
